@@ -1,0 +1,17 @@
+import numpy as np
+
+def matrix_trace(A):
+    """
+    Compute the trace of a square matrix (sum of diagonal elements).
+    """
+    A = np.asarray(A)
+    n,m =A.shape
+
+    if n!=m :
+        raise ValueError("not equal")
+
+    trace = 0
+    for i in range(n):
+        trace += A[i,i]
+
+    return trace 
