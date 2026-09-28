@@ -15,3 +15,4 @@ def dot_product(x, y):
         raise ValueError("values must be of same length")
 
     return float(np.sum(x*y))    
+    
